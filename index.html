@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>PPU Result Download</title>
+</head>
+<body>
+  <div class="container">
+    <h1>PPU Result Download</h1>
+    <label for="year">Select Year:</label>
+    <select id="year">
+      <option value="YEAR-2023">YEAR-2023</option>
+      <option value="YEAR-2022">YEAR-2022</option>
+    </select>
+
+    <label for="examType">Select Exam Type:</label>
+    <select id="examType">
+      <option value="Vocational">Vocational</option>
+      <option value="General">General</option>
+      <option value="Regular">Regular</option>
+    </select>
+
+    <label for="course">Select Course:</label>
+    <select id="course">
+      <option selected="selected" value="Part-I">Part-I</option>
+      <option value="Part-II">Part-II</option>
+      <option value="Part-III">Part-III</option>
+    </select>
+
+    <label for="number">Enter Number:</label>
+    <input type="text" id="number" placeholder="Enter Roll Number...">
+
+    <div class="button-container">
+      <button id="generatePDF">Generate</button>
+      <div class="links">
+        <a id="viewPDF" target="_blank" rel="noopener noreferrer" style="display:none;">View PDF</a>
+        <a id="downloadPDF" style="display:none;">Download Result</a>
+      </div>
+    </div>
+    <div class="footer">
+        <p class="dev">Made by RituRajPS</p>
+        <p class="copyright">Copyright 2023</p>
+        <p class="ppu">Fron Non-Secure PPU Database</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
